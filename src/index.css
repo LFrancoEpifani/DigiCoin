@@ -30,7 +30,24 @@ body{
   font-family: 'Space Grotesk', sans-serif;
 }
 
+.coinName{
+  font-size: 20px;
+  margin-top: 12px;
+}
 
+.percentage{
+  color: red;
+}
+
+.price{
+  text-align: center;
+  font-size: 20px;
+}
+
+.slider-coins{
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+}
 
 .bounce2 {
     animation: bounce2 2s linear infinite;

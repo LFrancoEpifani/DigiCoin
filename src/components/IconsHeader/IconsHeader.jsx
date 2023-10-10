@@ -1,7 +1,7 @@
 import React from 'react'
 import { Icon } from '@iconify/react';
 
-export default function Icons() {
+export default function IconsHeader() {
   return (
     <div className='flex text-xl gap-4'>
     <Icon icon="ri:twitter-fill"/>

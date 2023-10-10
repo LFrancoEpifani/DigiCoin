@@ -1,5 +1,4 @@
 import React from 'react'
-import { Icon } from '@iconify/react';
 
 
 export default function Navegation() {
@@ -7,10 +6,10 @@ export default function Navegation() {
     <div className='flex justify-between'>
         <nav >
             <ul className='flex list-none gap-8 text-lg nav'>
-                <li><a href="">Home</a></li>
-                <li><a href="">Market</a></li>
-                <li><a href="">Choose us</a></li>
-                <li><a href="">Join</a></li>
+                <li>Home</li>
+                <li>Market</li>
+                <li>Choose us</li>
+                <li>Join</li>
             </ul>
         </nav>
     </div>
