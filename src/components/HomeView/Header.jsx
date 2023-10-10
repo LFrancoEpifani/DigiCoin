@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
     <div className='flex justify-between p-8 items-center text-white'>
-        <h1 className='text-3xl uppercase'>DigiCoin</h1>
+        <h1 className='text-3xl uppercase font-bold'>DigiCoin</h1>
         <Navegation/>
         <IconsHeader/>
     </div>
