@@ -3,6 +3,7 @@ import axios from 'axios';
 import Table from '../Table/Table';
 
 export default function CryptoApi() {
+  
   const [coins, setCoins] = useState([]);
 
   const getData = async () => {

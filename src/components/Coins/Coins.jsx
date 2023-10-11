@@ -35,16 +35,15 @@ export default function Coins() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Simulate updated data (replace this with actual data fetching)
       const updatedData = coinData.map((coin) => ({
         ...coin,
         percentage: coin.percentage + (Math.random() - 0.5) * 2,
         price: coin.price + (Math.random() - 0.5) * 10,
       }));
       setCoinData(updatedData);
-    }, 1000);
+    }, 3000);
 
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval); 
   }, [coinData]);
 
   return (
@@ -52,7 +51,7 @@ export default function Coins() {
       {coinData.map((coin, index) => (
         <div key={index} className='flex flex-col items-center'>
           <Icon icon={coin.icon} color={coin.color} fontSize={"90px"} />
-          <h3 className="coinName">{coin.name} <span className='percentage'>{coin.percentage.toFixed(2)}%</span></h3>
+          <h3 className="coinName">{coin.name} <span className={coin.percentage < 0 ? 'text-red-600' : 'text-green-600'}>{coin.percentage.toFixed(2)}%</span></h3>
           <p className='price'>$ {coin.price.toFixed(2)}</p>
         </div>
       ))}

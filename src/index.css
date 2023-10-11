@@ -16,12 +16,12 @@ body{
 
 .track{
     color: white;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 .nav{
   cursor: pointer;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Lora', serif;
 }
 
 .coins{
@@ -39,14 +39,14 @@ body{
 
 .market{
   margin: 50px;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .crypto{
-  background-image: linear-gradient(25deg,#ff3c00, #c7e2f8);
+  background-image: linear-gradient(25deg,#00aaff, #c7e2f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .coinName{
