@@ -9,14 +9,21 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, rgb(117, 33, 243), rgb(0, 0, 0) );
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(55, 130, 250) );
     width: 100%;
     height: 100%;
+    color: black;
 }
 
+.dark-mode{
+  background: linear-gradient(to bottom, rgb(11, 11, 11), rgb(4, 66, 137) );
+  color: white;
+}
+
+
 .track{
-    color: white;
-    font-family: 'Lora', serif;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav{
@@ -34,7 +41,7 @@ body{
 
 .active{
   font-weight: 900;
-  color: #F9A744;
+  color: #44a1f9;
 }
 
 .market{
@@ -43,10 +50,14 @@ body{
 }
 
 .crypto{
-  background-image: linear-gradient(25deg,#00aaff, #c7e2f8);
+  background-image: linear-gradient(25deg,#00aaff, #8e8d8d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Karla', sans-serif;
+}
+
+.background-moon{
+  background-color: #092239;
 }
 
 .coinName{

@@ -18,7 +18,7 @@ export default function Table({ coins }) {
         <td scope="row" className="flex items-center p-2 font-medium text-white whitespace-nowrap dark:text-white coins me-4">
           <img src={coin.image} alt={coin.name} style={{ width: "5%" }} className='m-4 img-fluid' />
           <span>{coin.name}</span>
-          <span className='ms-3 text-gray-400 uppercase'>{coin.symbol}</span>
+          <span className='ms-3 text-gray-500 uppercase'>{coin.symbol}</span>
         </td>
         <td scope="row" className="p-2 font-medium text-white whitespace-nowrap dark:text-white coins">
           $ {coin.current_price}

@@ -47,12 +47,12 @@ export default function Coins() {
   }, [coinData]);
 
   return (
-    <div className='slider-coins grid grid-cols-4 justify-between p-8'>
+    <div className='slider-coins grid grid-cols-4 justify-between p-8 gap-6'>
       {coinData.map((coin, index) => (
-        <div key={index} className='flex flex-col items-center'>
-          <Icon icon={coin.icon} color={coin.color} fontSize={"90px"} />
-          <h3 className="coinName">{coin.name} <span className={coin.percentage < 0 ? 'text-red-600' : 'text-green-600'}>{coin.percentage.toFixed(2)}%</span></h3>
-          <p className='price'>$ {coin.price.toFixed(2)}</p>
+        <div key={index} className='flex flex-col items-center bg-gradient-to-b from-[#efeeee27] to-[#3071b127] text-white rounded-xl py-4 border border-[#4f4f4f]'>
+          <Icon icon={coin.icon} color={coin.color} fontSize={"90px"} className='drop-shadow-3xl' />
+          <h3 className="coinName text-black">{coin.name} <span className={coin.percentage < 0 ? 'text-red-600' : 'text-green-600'}>{coin.percentage.toFixed(2)}%</span></h3>
+          <p className='price text-black'>$ {coin.price.toFixed(2)}</p>
         </div>
       ))}
     </div>
